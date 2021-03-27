@@ -1,0 +1,25 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $background-main;
+  color: $black-text;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+

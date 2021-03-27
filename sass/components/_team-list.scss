@@ -1,0 +1,60 @@
+.team-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      width: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
+    }
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__content { 
+    background-color: $background-main;
+    padding: 30px 32px;
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    margin-bottom: 10px;
+  }
+
+  &__prof {
+    color: $grey-text;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    margin-bottom: 16px;
+  }
+}

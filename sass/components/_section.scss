@@ -1,0 +1,54 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--advantages {
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &--about {
+    padding-top: 0;
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &--team {
+    background-color: $background-light;
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &--client {
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;   
+    }
+  }
+
+  &--portfolio {
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;   
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 28px;
+      line-height: 1.18;
+      margin-bottom: 30px;
+    }
+  }
+}

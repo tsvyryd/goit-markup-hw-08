@@ -1,0 +1,33 @@
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * #{$card-set-gap});
+  margin-top: calc(-1 * #{$card-set-gap});
+
+  &__item {
+    flex-basis: calc(100% / 3 - #{$card-set-gap});
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 27px 82px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $white-text;
+  }
+}

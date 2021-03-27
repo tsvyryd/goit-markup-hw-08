@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-dark;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  &__title  {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: left;
+    color: $white-text;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+
+}

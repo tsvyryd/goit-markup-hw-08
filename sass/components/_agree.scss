@@ -1,0 +1,45 @@
+.agree {
+  color: $grey-text;
+  cursor: pointer;
+
+  &__checkbox:checked + &__icon {
+    border: none;
+  }
+  
+  &__checkbox:checked + &__icon &__use {
+    display: block;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+  
+    border: 2px solid $black-text;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  &__use {
+    display: none;
+  }
+  
+  &__text {
+    margin-left: 37px;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: $blue-text;
+  }
+}
+
+.checkbox-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

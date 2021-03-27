@@ -1,0 +1,120 @@
+.form {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $grey-text;
+    margin-bottom: 4px;
+  }
+
+  &__input {
+    width: 100%;
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 40px;
+    border: 1px solid $form-input-border;
+    border-radius: 4px;
+    outline: none;
+
+    color: $grey-text;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__comment {
+    resize: none;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid $form-input-border;
+    border-radius: 4px;
+    outline: none;
+
+    color: $grey-text;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__comment::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: $placeholder-comment-color;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+
+  &__input:focus + &__icon {
+    fill: $blue-text;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__input:focus {
+    box-shadow: 0 0 0 1px $blue-text;
+  }
+
+  &__comment:focus {
+    box-shadow: 0 0 0 1px $blue-text;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    min-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  
+    background: $blue-text;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  
+    color: $white-text;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__btn:hover,
+  &__btn:focus {
+    background-color: $form-btn-hover;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+}

@@ -1,0 +1,27 @@
+.page-footer {
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__text {
+    margin-top: 20px;
+    color: $white-text;
+  }
+}
+
+.footer_tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
