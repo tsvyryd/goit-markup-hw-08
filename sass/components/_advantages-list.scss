@@ -26,10 +26,10 @@
     }
 
     @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
+      display: flex;
+      flex-direction: column;
     }
 
     @media screen and (min-width: 1200px) {
