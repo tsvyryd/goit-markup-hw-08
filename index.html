@@ -54,8 +54,8 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg class="mobile-icon" width="24" height="24">
-              <use href="images/icons.svg#icon-smartphone"></use>
+            <svg class="mobile-icon" width="40" height="40">
+              <use href="images/icons.svg#icon-menu_40px"></use>
             </svg>
           </button>
       </div>
@@ -80,11 +80,13 @@
                   <use href="images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
+              <div class="advantages-list__content">
               <h3 class="advantages-list__title">Внимание к деталям</h3>
-              <p class="advantages-list__content">
+              <p class="advantages-list__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
+            </div>
             </li>
             <li class="advantages-list__item">
               <div class="advantages-list__image">
@@ -92,11 +94,13 @@
                   <use href="images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
+              <div class="advantages-list__content">
               <h3 class="advantages-list__title">Пунктуальность</h3>
-              <p class="advantages-list__content">
+              <p class="advantages-list__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
+            </div>
             </li>
             <li class="advantages-list__item">
               <div class="advantages-list__image">
@@ -104,11 +108,13 @@
                   <use href="images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
+              <div class="advantages-list__content">
               <h3 class="advantages-list__title">Планирование</h3>
-              <p class="advantages-list__content">
+              <p class="advantages-list__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
+            </div>
             </li>
             <li class="advantages-list__item">
               <div class="advantages-list__image">
@@ -116,11 +122,13 @@
                   <use href="images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
+              <div class="advantages-list__content">
               <h3 class="advantages-list__title">Современные технологии</h3>
-              <p class="advantages-list__content">
+              <p class="advantages-list__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -163,6 +171,7 @@
             <li class="team-list__item">
               <img
                 src="images/img1.jpg"
+                srcset="images/img1.jpg 1x, images/img1@2x.jpg 2x"
                 class="team-list__img"
                 alt="Игорь Демьяненко"
               />
@@ -202,7 +211,9 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="images/img2.jpg" alt="Ольга Репина" />
+              <img src="images/img2.jpg" 
+              srcset="images/img2.jpg 1x, images/img2@2x.jpg 2x"
+              alt="Ольга Репина" />
               <div class="team-list__content">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__prof">Frontend Developer</p>
@@ -239,7 +250,9 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="images/img3.jpg" alt="Николай Тарасов" />
+              <img src="images/img3.jpg" 
+              srcset="images/img3.jpg 1x, images/img3@2x.jpg 2x"
+              alt="Николай Тарасов" />
               <div class="team-list__content">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__prof">Marketing</p>
@@ -276,7 +289,9 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="images/img4.jpg " alt="Михаил Ермаков" />
+              <img src="images/img4.jpg " 
+              srcset="images/img4.jpg 1x, images/img4@2x.jpg 2x"
+              alt="Михаил Ермаков" />
               <div class="team-list__content">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__prof">UI Designer</p>
@@ -541,9 +556,11 @@
               </svg>
               <span class="agree__text"
                 >Соглашаюсь с рассылкой и принимаю&nbsp;
-              </span>
+                <a href="#" class="agree__link">Условия договора</a>
+              </span> 
+              
             </label>
-            <a href="#" class="agree__link">Условия договора</a>
+           
           </div>
           <button type="submit" class="form__btn">Отправить</button>
         </form>
@@ -552,8 +569,8 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle menu-toggle__close js-close-menu">
-        <svg class="mobile-icon" width="24" height="24">
-          <use href="images/icons.svg#icon-person"></use>
+        <svg class="mobile-icon" width="40" height="40">
+          <use href="images/icons.svg#icon-close_40px"></use>
         </svg>
       </button>
       <ul class="mobile-menu">

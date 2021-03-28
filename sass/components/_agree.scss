@@ -13,12 +13,23 @@
   &__icon {
     position: absolute;
     top: 50%;
-    left: 14px;
     transform: translateY(-50%);
   
     border: 2px solid $black-text;
     border-radius: 2px;
     cursor: pointer;
+
+    @media screen and (max-width: 450px) {
+      top: 10px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      left: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      left: 14px;
+    }
   }
   
   &__use {
@@ -26,7 +37,15 @@
   }
   
   &__text {
-    margin-left: 37px;
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.17;
+      margin-left: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 37px;
+    }
   }
 
   &__link {

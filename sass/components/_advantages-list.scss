@@ -10,7 +10,7 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-  
+
     margin-bottom: 10px;
 
     @media screen and (max-width: 767px) {
@@ -19,6 +19,11 @@
   }
 
   &__item {
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -32,10 +37,16 @@
       flex-wrap: wrap;
       width: calc((100% - 8 * 15px) / 4);
       margin: 15px;
-    }  
+    }
   }
 
-  &__content {
+  @media screen and (min-width: 768px) {
+    advanture-list__content {
+      flex-grow: 1;
+    }
+  }
+
+  &__text {
     color: $grey-text;
   }
 
@@ -43,20 +54,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     border-radius: 4px;
     background-color: $background-light;
     margin-bottom: 30px;
 
-    @media screen and (max-width: 767px) {     
+    @media screen and (max-width: 767px) {
       height: 120px;
       width: 100%;
     }
 
-    @media screen and (min-width: 768px) {     
+    @media screen and (min-width: 768px) {
       height: 120px;
       width: 100%;
     }
   }
 }
-
