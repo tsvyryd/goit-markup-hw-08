@@ -470,7 +470,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .site-nav__link::after {
-    bottom: -1px;
+    bottom: -3px;
   }
 }
 
